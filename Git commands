@@ -1,0 +1,28 @@
+GIT COMMANDS
+
+
+1.go to the folder u need to push or pull-----> cd linkofsrcfile.
+2.git init---initialize the git
+3.to add file in git ----->git add file name
+4.to confirm------->git commit -m "to execute some line that pushed in git for our understand"
+5.in git the file to saved in particular repo---->git remote d origin linkof the repo
+6.to insert the file in repo---->git push -u origin master enter,and put username of git.
+7.u can see the file in selected repo.
+8 git add . (add two or more file in git at a time)
+9.to create branch----------> git checkout -b 'branch name'
+10.to move branch to master -------->git checkout master
+
+11.TO clone or copy repo to local pc ---->git clone "repoLink"(first move directory to
+ the space where we going to cpoy the repo then use git cmd.
+12.ls--lists of repo or file.
+
+remove git repo from particular space or path ----rm -rf .git
+------------------------------------------------------------------------------------------------------
+1.clone
+2.status
+3.switch directory
+4.branch
+5.checkout
+
+
+javac -version/java -version
