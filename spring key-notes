@@ -1,0 +1,27 @@
+SCHEDULER CONTROLLER FLOW
+
+-- @RestController--class mark itself as request handler and create restful 
+webservcie.
+-- @RefreshScope-- load config prop from config server(bind the config
+ package to load when the request hits).
+-- @RequestMapping--used to map the request to the specified class and
+ method and make web addressable.
+-- @Tag--(filtered)mostly used in test class and execute the tets plan.  
+development team specify the values 'fast','slow'.etc
+-- @SecurityRequirements-- define the spectific set of security to the endpoints
+-- @Autowired-- connect the other class function automatically.dependency 
+injection
+-- @Qualifier--define the preference,when the multiple bean has same type 
+present in it.
+-- @value--inject the value which managed by spring bean
+-- @ApiOperation--is an unique combination of api call and hhtp method,
+describe the results of successful rest api.specify general
+ return type.
+-- @RefreshScope--used to load the config prop values in config server,the
+ server should run before the config client appln.
+-- @Scheduled --used to trigger the scheduled task for specific  time period.
+-- @Transactional--metadata that specifies the information of the transaction on 
+a method.
+-- @SuppressWarnings--instruct the complier to ignore specified complier
+ warnings un annotated elements and all pgm elmnts inside the elemnts
+
