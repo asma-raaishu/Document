@@ -1,0 +1,96 @@
+try (a= new a()){
+}catch{}---try with resources:(resources like files,data connection,network sockets)
+------>declares the resources with try block and resrc will be 
+closed after the execution of that block.
+each resource close at the end of stmt.
+adv:When multiple resources are opened in try-with-resources, 
+it closes them in the reverse order to avoid any dependency issue.
+
+
+Exception Handling: handle the abnormal flow in program.
+ exception object should be throwable
+THROWABLE--->PARENT class
+
+1.checked exception
+2.unchecked exception
+3. errors
+
+keywords:
+try-- execute block of codes to handle exception in block
+catch--catch the exception occur in program,execute only exception occurs
+finally--it will execute always whether exception occur or not.
+throw
+throws
+=====================================================================
+
+MAP 
+it is an interface which having key-value pairs.
+here key is an unique values--->which has set.
+values may or may not have same values----->set/list.
+
+it may have null values,keys---> Hash Map,
+stores key-value in order---->linkedHashMap,treeMap
+
+Map<> a= new HashMap();---->Map is an interface defining the variable a, and initalizing to hashmap(implementation of map)
+,when we need to change to any of implemetation in map, we don't need to create another variable just can initalize
+ with other implementation of map.(like, Map a=new treeMap();)
+
+======================================================================
+
+Streams(introduce in java-8)
+(sequential flow of datas)
+
+supports collection framework,parallel processing,better performance, readable codes.
+(pipeline flow)
+      |
+      |
+SOURCE(collection of Objects)===>INTERMEDIATE(operations-filter,map)====>TERMINAL(foreach,collector)
+
+
+FILTER(predicate):
+filters the data based on the predicated values.[i/p---->boolean o/p]
+
+map(functionInterface):
+one input to another input.  [i/p-->o/p]  {stream.map()}
+
+COLLECT(terminal operator):
+interface-->collectors(implementation)
+interface Collector<T,A,R>
+t-type of i/p
+a-intermediate obj
+r-return type
+
+many methods having return type of collectors
+
+
+ForEach:
+traverse the each value
+for(datatype variable :arrayname)
+
+==========================================================================================================================================================================================
+
+Streams:
+to process the object from collction we use streams concepts.
+
+1.filter 
+2.map
+
+stream:java.util.package
+FILTER :
+inupt ------>Condition --------->Output
+collection        filter
+
+map:
+input---->operation----->inputforother
+Stream process:
+1.src(i/p)----->Stream(process{filter/map->deals with lambda Exp})
+Stream processing methods
+2.src(i/p)----->Stream(process{filter/map})------>methods(sort/count/collect/distinct/foreach)
+
+forEach(read) in streams method(consumer-->whaterever the valu is stored it will be return)
+
+Filter: filters the data based on some condition.
+
+
+
+stream
